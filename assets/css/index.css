@@ -30,24 +30,26 @@ body {
   */
 
 #landing-header h1 {
-    font-size: 7rem;
+    font-size: 9rem;
     position: relative;
     color: white;
-    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+    /* text-shadow: 0px 2px 10px rgba(255, 255, 255, 0.5);
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
+    background-clip: text; */
 }
 
-#landing-header h1 span {
+#landing-header h1 #background {
     height: 60%;
     position: absolute;
     color: rgb(249, 160, 63);
     overflow: hidden;
-    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.363);
+    text-shadow: 0px 1px 0px rgba(249, 159, 63, 0.534), 0px 2px 0px rgba(249, 159, 63, 0.342), 0px 3px 0px rgba(249, 159, 63, 0.219), 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+    /* text-shadow: 0px 2px 10px rgba(255, 255, 255, 0.5);
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
+    background-clip: text; */
 }
 
 
@@ -206,4 +208,16 @@ control nav bar behaviour when it is scrolled wrt JS code in html file
 .entry-button {
     color: rgb(61, 19, 8);
     size: 2rem;
+}
+
+.letter {
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.flip-animation {
+    -moz-transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
 }
